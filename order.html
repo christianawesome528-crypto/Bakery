@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Order | Beauty Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">BB</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="order.html" class="active">Custom Order</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="order-page">
+        <h1>Custom Cake Order</h1>
+        <div class="delivery-banner">Delivery available across Lagos only</div>
+        <form id="order-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <select id="area" required>
+                <option value="">Select Lagos Area</option>
+                <option>Ikeja</option><option>Lekki</option><option>Yaba</option>
+                <option>Surulere</option><option>Victoria Island</option><option>Ikoyi</option>
+                <option>Ajah</option><option>Maryland</option><option>Apapa</option>
+                <option>Festac</option><option>Gbagada</option><option>Magodo</option>
+            </select>
+            <input type="text" id="size" placeholder="Cake Size e.g. 8 inches, 10 inches">
+            <input type="text" id="flavors" placeholder="Flavors e.g. Vanilla, Red Velvet, Chocolate">
+            <input type="date" id="date" required>
+            <textarea id="description" placeholder="Describe your dream cake... colors, theme, writing, decorations" required></textarea>
+            <button type="submit" id="whatsapp-btn" disabled>Send Order to WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Beauty Bakery | WhatsApp: +234 905 809 5782 | Lagos, Nigeria</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
